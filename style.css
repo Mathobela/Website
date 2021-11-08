@@ -1,0 +1,40 @@
+/*.................UNIVERSAL..............*/
+body {
+  background-color: rgb(241, 238, 233);
+  color: rgb(107, 97, 97);
+  max-width: 550px;
+  width: 85%;
+}
+/*.................HEADER..................*/
+header a {
+  text-decoration: none;
+}
+header li {
+  list-style: none;
+  padding: 0.5rem;
+}
+header ul{
+  display: flex;
+  justify-content: start;
+  padding: 0;
+}
+
+/*.................BODY........................*/
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.2em;
+}
+
+/*..............MEDIA...................*/
+@media screen and (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: max-content;
+  }
+  header, footer {
+      grid-column: 1 / -1;
+  }
+}
