@@ -1,6 +1,6 @@
 /*.................UNIVERSAL..............*/
 body {
-  background-color: rgb(241, 238, 233);
+  background-color: #c4afbe;
   color: rgb(107, 97, 97);
   max-width: 550px;
   width: 85%;
@@ -8,6 +8,7 @@ body {
 /*.................HEADER..................*/
 header a {
   text-decoration: none;
+  
 }
 header li {
   list-style: none;
@@ -17,6 +18,7 @@ header ul{
   display: flex;
   justify-content: start;
   padding: 0;
+  background-color: rgb(160, 148, 84);
 }
 
 /*.................BODY........................*/
