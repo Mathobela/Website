@@ -1,24 +1,45 @@
 /*.................UNIVERSAL..............*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #c4afbe;
   color: rgb(107, 97, 97);
-  max-width: 550px;
-  width: 85%;
+  display: grid;
+  grid-template-columns: 1/-1;
+  grid-template-rows: repeat(auto-fit, 1fr);
 }
 /*.................HEADER..................*/
-header a {
+
+.navbar { 
+  overflow: hidden;
+  background-color: rgb(232, 235, 231);
+  position: relative;
+}
+
+.navbar #myLinks {
+  display: none;
+}
+
+.navbar a {
+  color: rgb(165, 98, 98);
+  padding: 14px 16px;
   text-decoration: none;
-  
+  font-size: 17px;
+  display: block;
 }
-header li {
-  list-style: none;
-  padding: 0.5rem;
+.navbar a.icon {
+  background: rgb(70, 51, 51);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0; 
 }
-header ul{
-  display: flex;
-  justify-content: start;
-  padding: 0;
-  background-color: rgb(160, 148, 84);
+
+​​​​​​​.navbar a:hover {
+  background-color: rgb(31, 29, 29);
+  color: black;
 }
 
 /*.................BODY........................*/
@@ -27,14 +48,51 @@ h1 {
 }
 h2 {
     font-size: 1.2em;
+    text-align: center;
 }
 
+#intro {
+  display: grid;
+  grid-template-columns: 1/-1;
+  grid-template-rows: 2fr;
+  width: 100%;
+  font-family: 'Brush Script MT', cursive;
+  font-size: larger;
+  text-align: center;
+  background-color: #739c2659;
+  margin-top: 0.5em;
+  border-radius: 60%;
+  color: rgb(23, 38, 44);
+}
+
+#slogan {
+  font-size: x-small;
+}
+
+
+
+#img {
+  width: 100%;
+  height: auto;
+  border-radius: 70%;
+  
+}
+
+#summary ul {
+  font-size:smaller ;
+  align-items: center;
+  justify-self: center;
+}
 /*..............MEDIA...................*/
 @media screen and (min-width: 600px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: max-content;
+  
+  .navbar a.icon {
+    display: none;
+  }
+
+
+  #summary {
+    display: block;
   }
   header, footer {
       grid-column: 1 / -1;
