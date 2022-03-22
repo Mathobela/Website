@@ -18,7 +18,7 @@ body, html{
 
 
 
-.navbar { 
+.navbar{ 
   overflow: hidden;
   background-color: rgb(232, 235, 231);
   position: relative;
@@ -89,8 +89,9 @@ h2 {
 
 
 /*..............FOOTER.................*/
-footer a {
-  justify-content: center;
+footer  {
+  background-color: rgb(232, 235, 231);
+  align-items: center;
 }
 
 /*..............MEDIA...................*/
@@ -120,6 +121,12 @@ footer a {
     display: block;
     text-align: right;
 
+  }
+
+  footer a{
+    font-size: large;
+    float: right;
+    padding: 2rem;
   }
 
 }
