@@ -88,12 +88,6 @@ h2 {
 }
 
 
-/*..............FOOTER.................*/
-footer  {
-  background-color: rgb(232, 235, 231);
-  align-items: center;
-}
-
 /*..............MEDIA...................*/
 @media screen and (min-width: 600px) {
   body, html {
@@ -117,6 +111,7 @@ footer  {
     text-align: left;
     top: 0;
   }
+
   .navbar #myLinks {
     display: block;
     text-align: right;
@@ -124,7 +119,6 @@ footer  {
   }
 
   footer a{
-    font-size: large;
     float: right;
     padding: 2rem;
   }
