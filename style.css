@@ -20,6 +20,7 @@ body {
 
 .navbar #myLinks {
   display: none;
+  
 }
 
 .navbar a {
@@ -37,10 +38,7 @@ body {
   top: 0; 
 }
 
-​​​​​​​.navbar a:hover {
-  background-color: rgb(31, 29, 29);
-  color: black;
-}
+​​​
 
 /*.................BODY........................*/
 h1 {
@@ -85,16 +83,27 @@ h2 {
 }
 /*..............MEDIA...................*/
 @media screen and (min-width: 600px) {
-  
+  body, html {
+    width: 100%;
+    height: 100%;
+  }
   .navbar a.icon {
     display: none;
   }
-
-
-  #summary {
+  .navbar {
+    float: left;
+    width: 20%;
+  }
+  .navbar #myLinks {
     display: block;
   }
-  header, footer {
-      grid-column: 1 / -1;
+  
+  #homepage {
+    background-image: url(coding.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    color: white;
   }
+ 
 }
