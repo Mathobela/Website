@@ -1,10 +1,13 @@
 /*.................UNIVERSAL..............*/
 * {
   box-sizing: border-box;
+
 }
 
-body {
-  background-color: #c4afbe;
+body, html{
+  background-image: url("wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: rgb(107, 97, 97);
   display: grid;
   grid-template-columns: 1/-1;
@@ -59,8 +62,15 @@ h2 {
   width: 100%;
   font-family: 'Brush Script MT', cursive;
   font-size: 2rem;
+  font-weight: 10;
   text-align: center;
-  color: rgb(23, 38, 44);
+  color: rgb(232, 235, 231);
+  
+}
+
+.name {
+  font-weight: bold;
+  color: rgb(42, 79, 94);
 }
 
 .img {
@@ -69,10 +79,18 @@ h2 {
   
 }
 
+
+
 #summary ul {
   font-size:smaller ;
   align-items: center;
   justify-self: center;
+}
+
+
+/*..............FOOTER.................*/
+footer a {
+  justify-content: center;
 }
 
 /*..............MEDIA...................*/
@@ -103,18 +121,5 @@ h2 {
     text-align: right;
 
   }
- 
-  #slogan-slide {
-    width: 85%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    align-self: center;
-  }
-
- 
-
 
 }
