@@ -9,8 +9,11 @@ body {
   display: grid;
   grid-template-columns: 1/-1;
   grid-template-rows: repeat(auto-fit, 1fr);
+ 
 }
 /*.................HEADER..................*/
+
+
 
 .navbar { 
   overflow: hidden;
@@ -55,24 +58,14 @@ h2 {
   grid-template-rows: 2fr;
   width: 100%;
   font-family: 'Brush Script MT', cursive;
-  font-size: larger;
+  font-size: 2rem;
   text-align: center;
-  background-color: #739c2659;
-  margin-top: 0.5em;
-  border-radius: 60%;
   color: rgb(23, 38, 44);
 }
 
-#slogan {
-  font-size: x-small;
-}
-
-
-
-#img {
-  width: 100%;
+.img {
+  max-width: 100%;
   height: auto;
-  border-radius: 70%;
   
 }
 
@@ -81,6 +74,7 @@ h2 {
   align-items: center;
   justify-self: center;
 }
+
 /*..............MEDIA...................*/
 @media screen and (min-width: 600px) {
   body, html {
@@ -91,19 +85,36 @@ h2 {
     display: none;
   }
   .navbar {
-    float: left;
-    width: 20%;
+    
+    display: grid;
+    grid-template-columns: 4fr 10fr;
+    grid-template-rows: 1/-1;
+   
+   
+  }
+
+  .navbar a {
+    display: inline-block;
+    text-align: left;
+    top: 0;
   }
   .navbar #myLinks {
     display: block;
-  }
-  
-  #homepage {
-    background-image: url(coding.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-sizing: border-box;
-    color: white;
+    text-align: right;
+
   }
  
+  #slogan-slide {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+  }
+
+ 
+
+
 }
