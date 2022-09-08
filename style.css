@@ -79,14 +79,16 @@ h2 {
   
 }
 
-
-
 #summary ul {
   font-size:smaller ;
   align-items: center;
   justify-self: center;
 }
 
+.fields {
+  padding: 10px;
+  margin: 10px 10px;
+}
 
 /*..............MEDIA...................*/
 @media screen and (min-width: 600px) {
