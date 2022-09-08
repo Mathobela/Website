@@ -25,7 +25,7 @@
         </nav>
     </header>
     <h2>Get in touch</h2>
-        <form action="answers.html" method="get">
+        <form name="form" action="answers.html" onsubmit="return validateForm()" method="get">
             <label for="fname">Firstname</label>
             <input type="text" name="Firstnam" id="fname"><br>
             <label for="lname">Lastname</label>
@@ -57,5 +57,16 @@
         x.style.display = "block";
       }
     }
+    
+    function validateForm() {
+      let fields = ["fname", "lname", "phone", "email", "message"];
+      for(let field in fields) {
+          let x = document.forms["form"]["fname"].value;
+          if (x == "") {
+          alert(`${field} must be filled out`);
+          return false;            
+      }
+   }
+}
     </script>
 </html>
